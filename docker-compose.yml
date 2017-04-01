@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+
+  wordpress:
+    image: wordpress:1.0
+    build: .
+    ports:
+      - 80:80
