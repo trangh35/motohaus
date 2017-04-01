@@ -19,8 +19,8 @@ services:
      ports:
        - "8000:80"
      restart: always
-     #volumes:
-      # - ${PWD}:/var/www/html
+     volumes:
+       - ${PWD}:/var/www/html/wp-content/themes/motohaus
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_PASSWORD: wordpress
