@@ -15,11 +15,11 @@ This will list your docker containers
 ```
 docker ps
 ```
-find the Container ID, e.g. 4981f9cda931, and run:
+find the Container ID, e.g. 4981f9cda931, or the NAME, e.g. wordpress and run:
 ```
-docker exec -it 4981f9cda931 bash
+docker exec -it 4981f9cda931 bash or docker exec -it wordpress bash
 ```
-This will give you an SSH session inside the docker container, you can access the mysql instance by it's container name, which you can get from docker ps under the NAMES column, e.g. motohaus_db_1
+This will give you an SSH session inside the docker container, you can access the mysql instance by it's container name, which you can get from docker ps under the NAMES column, e.g. mysql
 
 For Wordpress setup:
 
